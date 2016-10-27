@@ -19,12 +19,10 @@ def shortFlash():
 	led.off()
 
 def getInput():
-	inputString = raw_input("Please enter text or type \"quit\" to exit: ")
+	return raw_input("Please enter text or type \"quit\" to exit: ")
 
-getInput()
-inputString = inputString.lower()
+inputString = getInput().lower()
 while (inputString != "quit"):
-	inputString == inputString.lower()
 	for c in inputString:
 		morseconverted = converted[c]
 		for symbol in morseconverted:
@@ -32,3 +30,4 @@ while (inputString != "quit"):
 				longFlash()
 			elif symbol == ".":
 				shortFlash()
+	inputString = getInput().lower()
