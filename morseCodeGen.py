@@ -4,13 +4,13 @@ import time
 #Python dictionary containing characters and the matching morse code
 converted = {"a":".-","b":"-...","c":"-.-.","d":"-..","e":".","f":"..-.","g":"--.","h":"....","i":"..","j":".---","k":"-.-","l":".-..","m":"--","n":"-.","o":"---","p":".--.","q":"--.-","r":".-.","s":"...","t":"-","u":"..-","v":"...-","w":".--","x":"-..-","y":"-.--","z":"--..","0":"-----","1":".----","2":"..---","3":"...--","4":"....-","5":".....","6":"-....","7":"--...","8":"---..","9":"----.",".":".-.-.-",",":"--..--",":":"---...","?":"..--..","'":".----.","-":"-....-","/":"-..-.","(":"-.--.-",")":"-.--.-","\"":".-..-.","@":".--.-.","=":"-...-"}
 
-led = LED(26)                   #Assign pin #26 to a variable
-speed = 1                       #Change to proportionately alter speed
-longTime = .3 * speed           #Duration of the dash
-shortTime = .1 * speed          #Duration of the period
-intraTime = .1 * speed          #Duration of space between flash on same character
-spaceTime = .7 * speed          #Duration between words
-betweenCharTime = .3 * speed    #Duration between characters
+led = LED(26)                          #Assign pin #26 to a variable
+speedPercent = 100                     #Change to proportionately alter speed; 100 = Normal Speed; 50 = Half Speed
+longTime = 30 / speedPercent           #Duration of the dash
+shortTime = 10 / speedPercent          #Duration of the period
+intraTime = 10 / speedPercent          #Duration of space between flash on same character
+spaceTime = 70 / speedPercent          #Duration between words
+betweenCharTime = 30 / speedPercent    #Duration between characters
 inputString = ""
 
 #Flash LED for the dash
