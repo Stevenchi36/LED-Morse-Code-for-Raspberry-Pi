@@ -12,11 +12,13 @@ def longFlash():
 	led.on()
 	time.sleep(longTime)
 	led.off()
+	time.sleep(.2)
 
 def shortFlash():
 	led.on()
 	time.sleep(shortTime)
 	led.off()
+	time.sleep(.2)
 
 def getInput():
 	return raw_input("Please enter text or type \"quit\" to exit: ")
