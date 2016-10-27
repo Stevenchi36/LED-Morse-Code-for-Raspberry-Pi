@@ -13,10 +13,6 @@ spaceTime = 70.0 / speedPercent          #Duration between words
 betweenCharTime = 30.0 / speedPercent    #Duration between characters
 inputString = ""
 
-print longTime
-print shortTime
-print spaceTime
-
 #Flash LED for the dash
 def longFlash():
 	led.on()
