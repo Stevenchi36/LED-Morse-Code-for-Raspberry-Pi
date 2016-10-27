@@ -28,5 +28,5 @@ while (inputString.lower() != "quit"):
 		for symbol in morseconverted:
 			if symbol == "-":
 				longFlash()
-			else if symbol == ".":
+			elif symbol == ".":
 				shortFlash()
