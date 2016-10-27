@@ -19,6 +19,10 @@ def shortFlash():
 	time.sleep(shortTime)
 	led.off()
 	time.sleep(.2)
+def space():
+	led.on()
+	time.sleep(.1)
+	led.off()
 
 def getInput():
 	return raw_input("Please enter text or type \"quit\" to exit: ")
@@ -32,4 +36,6 @@ while (inputString != "quit"):
 				longFlash()
 			elif symbol == ".":
 				shortFlash()
+			elif symbol == " ":
+				space()
 	inputString = getInput().lower()
