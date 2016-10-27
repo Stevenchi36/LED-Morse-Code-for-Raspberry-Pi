@@ -17,4 +17,7 @@ def shortFlash():
 	time.sleep(shortTime)
 	led.off()
 
-def 
+def getInput():
+	inputString = raw_input("Please enter text or type quit to exit: ")
+
+getInput()
