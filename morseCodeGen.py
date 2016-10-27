@@ -6,6 +6,7 @@ converted = {"a":".-","b":"-...","c":"-.-.","d":"-..","e":".","f":"..-.","g":"--
 led = LED(26)
 longTime = 1
 shortTime = .5
+inputString = ""
 
 def longFlash():
 	led.on()
