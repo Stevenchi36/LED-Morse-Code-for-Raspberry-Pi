@@ -30,12 +30,15 @@ def getInput():
 inputString = getInput().lower()
 while (inputString != "quit"):
 	for c in inputString:
-		morseconverted = converted[c]
-		for symbol in morseconverted:
-			if symbol == "-":
-				longFlash()
-			elif symbol == ".":
-				shortFlash()
-			elif symbol == " ":
-				space()
+		if c == " ":
+			space()
+		elif:
+			morseconverted = converted[c]
+			for symbol in morseconverted:
+				if symbol == "-":
+					longFlash()
+				elif symbol == ".":
+					shortFlash()
+				elif symbol == " ":
+					space()
 	inputString = getInput().lower()
