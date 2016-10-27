@@ -21,7 +21,8 @@ def getInput():
 	inputString = raw_input("Please enter text or type \"quit\" to exit: ")
 
 getInput()
-while (inputString.lower() != "quit"):
+inputString = inputString.lower()
+while (inputString != "quit"):
 	inputString == inputString.lower()
 	for c in inputString:
 		morseconverted = converted[c]
