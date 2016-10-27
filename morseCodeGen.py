@@ -42,8 +42,8 @@ while (inputString != "quit"):
 		#If it is a space
 		if c == " ":
 			space()
-		#If it is not a space
-		else:
+		#If it is in the dictionary
+		elif c in converted:
 			#convert character to the morse code
 			morseconverted = converted[c]
 			#goes through each character in the morse code
@@ -56,8 +56,11 @@ while (inputString != "quit"):
 				elif symbol == ".":
 					shortFlash()
 					time.sleep(betweenCharTime)
-				#If the character is not supported in the dictionary
+				#If the symbol is somehow not a dash or period
 				else:
-					print "'" + c + "'" + " is not a supported character"
+					print "Not a '-' or '.'"
+		#If the character is not supported in the dictionary
+		else:
+			print "'" + c + "'" + " is not a supported character"
 	#Ask for input again
 	inputString = getInput().lower()
