@@ -26,7 +26,7 @@ while (inputString.lower() != "quit"):
 	for c in inputString:
 		morseconverted = converted[c]
 		for symbol in morseconverted:
-			if symbol == "-"
+			if symbol == "-":
 				longFlash()
-			else if symbol == "."
+			else if symbol == ".":
 				shortFlash()
