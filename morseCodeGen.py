@@ -8,6 +8,7 @@ led = LED(26)                   #Assign pin #26 to a variable
 speed = 1                       #Change to proportionately alter speed
 longTime = .3 * speed           #Duration of the dash
 shortTime = .1 * speed          #Duration of the period
+intraTime = .1 * speed          #Duration of space between flash on same character
 spaceTime = .7 * speed          #Duration between words
 betweenCharTime = .3 * speed    #Duration between characters
 inputString = ""
@@ -51,14 +52,15 @@ while (inputString != "quit"):
 				#If the symbol is a dash
 				if symbol == "-":
 					longFlash()
-					time.sleep(betweenCharTime)
+					time.sleep(intraTime)
 				#If the symbol is a period
 				elif symbol == ".":
 					shortFlash()
-					time.sleep(betweenCharTime)
+					time.sleep(intraTime)
 				#If the symbol is somehow not a dash or period
 				else:
 					print "Not a '-' or '.'"
+			time.sleep(betweenCharTime)
 		#If the character is not supported in the dictionary
 		else:
 			print "'" + c + "'" + " is not a supported character"
