@@ -32,7 +32,7 @@ while (inputString != "quit"):
 	for c in inputString:
 		if c == " ":
 			space()
-		elif:
+		else:
 			morseconverted = converted[c]
 			for symbol in morseconverted:
 				if symbol == "-":
