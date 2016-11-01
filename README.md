@@ -1,7 +1,7 @@
 <h1 align="center">LED Morse Code for Raspberry Pi</h1>
 
 <h2>About this project</h2>
-This project turns text that you input into morse code by flashing an LED light. Below is a tutorial to show you how to set everything up! The morseCodeGen.py file is also commented pretty well, so it should be decently easy to understand!
+This project turns text that you input into morse code by flashing an LED light. Below is a tutorial to show you how to set everything up! The morseCodeGen.py file is also commented pretty well, so it should be decently easy to understand for beginners!
 
 <h2>Materials Needed</h2>
 <ol>
@@ -15,7 +15,7 @@ This project turns text that you input into morse code by flashing an LED light.
 <h2>Getting Set Up</h2>
 <h3>Step 1: Clone the repository</h3>
 Open your terminal on the Raspberry Pi and navigate to the directory you want to program to be. Next, you will need to type: 
-<pre><code>"git clone https://github.com/Stevenchi36/LED-Morse-Code-for-Raspberry-Pi"</code></pre>
+<pre><code>git clone https://github.com/Stevenchi36/LED-Morse-Code-for-Raspberry-Pi</code></pre>
 <h3>Step 2: Setting up the breadboard</h3>
 <img src="https://i.imgur.com/U0Lip4g.jpg?2" alt="">
 <p>Refer to the image above for assistance with the next 3 steps.
